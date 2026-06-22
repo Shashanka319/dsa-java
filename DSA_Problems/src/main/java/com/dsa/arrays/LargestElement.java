@@ -4,7 +4,7 @@ public class LargestElement{
     public int largestElement(int[] index){
         int max=index[0];
         for(int i=0;i<index.length-1;i++){
-            if(index[i]>max){
+            if(index[i]<max){
                 max=index[i];
             }
         }
