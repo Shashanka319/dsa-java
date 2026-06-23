@@ -3,28 +3,27 @@ package com.dsa.arrays;
 import java.util.Arrays;
 
 public class TwoSortedSum {
-    public static boolean findSortedSum(int[] arr, int target){
+    public static boolean findSum(int[] arr,int target){
         int left=0;
         int right=arr.length-1;
         while(left<right){
-            int currentSum=arr[left]+arr[right];
-            if(currentSum==target){
+            int temSum=arr[left]+arr[right];
+            if(temSum==target){
                 return true;
-            }
-            else if(currentSum<target){
+            }else if(temSum<target){
                 left++;
-            }
-            else{
+            }else{
                 right--;
             }
         }
         return false;
     }
-    public static void main(String[] args) {
-        int[] numbers = {1, 4, 6, 8, 10, 15};
-        System.out.println("Given Sorted Array:"+ Arrays.toString(numbers));
-        int target = 14;
-        System.out.println("Target Element of two pair sum:"+target);
-        System.out.println("Find out the two pair sum acc to target value:"+findSortedSum(numbers, target));
+    public static void main(String[] arr){
+        int[] num={1,2,3,4,5,6,7,8,9,10};
+        int target=9;
+        System.out.println("Sorted Array Elements:"+Arrays.toString(num));
+        System.out.println("Target sum Value:"+target);
+        System.out.println("Find out the two pair sum in sorted array:"+findSum(num,target));
     }
 }
+
