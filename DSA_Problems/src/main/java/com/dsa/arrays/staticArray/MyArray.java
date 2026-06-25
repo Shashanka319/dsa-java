@@ -29,10 +29,20 @@ public class MyArray {
         System.out.println("Array Element at index 8:"+myArray[8]);
         System.out.println("Array Element at index 9:"+myArray[9]);
 
+        int target=5;
+        System.out.println("Array value:"+target);
+        int index=findIndex(myArray,target);
+        System.out.println("The index of "+target+"is:"+index);
 
 
     }
-
-
-
+    public static int findIndex(int[] arr, int target) {
+        // Loop through each index of the array
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == target) {
+                return i; // Value found, return current index
+            }
+        }
+        return -1; // Value not found in the array
+    }
 }
