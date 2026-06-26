@@ -1,5 +1,6 @@
 package com.dsa.arrays.staticArray;
 
+import java.sql.SQLOutput;
 import java.util.Arrays;
 
 public class Rotate {
@@ -10,7 +11,7 @@ public class Rotate {
 
         reverseHelper(nums, 0, n - 1);
 
-        /
+
         reverseHelper(nums, 0, k - 1);
 
 
@@ -35,9 +36,11 @@ public class Rotate {
         rotate(arr, k);
         System.out.println("Array Elements:"+ Arrays.toString(arr));
         System.out.println("K value of Given Rattating COndition:"+k);
+        System.out.println("Array Elements:"+ Arrays.toString(arr));
+        System.out.println("Rotating Array Elements:"+Arrays.toString(arr)+"K value For Given Condition:"+k);
 
         for (int num : arr) {
-            System.out.print("Rotated Array Elements:"+num + " "); 
+            System.out.print("Rotated Array Elements:"+num + " ");
         }
     }
 }
