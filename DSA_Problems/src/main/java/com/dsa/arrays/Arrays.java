@@ -1,9 +1,6 @@
-package com.dsa.arrays.staticArray;
+package com.dsa.arrays;
 
-
-import java.util.Arrays;
-
-public class MyArray {
+public class Arrays {
     public static void main(String[] args){
         int[] myArray=new int[10];
         myArray[0]=1;
@@ -16,7 +13,7 @@ public class MyArray {
         myArray[7]=8;
         myArray[8]=9;
         myArray[9]=10;
-        System.out.println("Total Array elements:"+Arrays.toString(myArray));
+        System.out.println("Total Array elements:"+ java.util.Arrays.toString(myArray));
 
         System.out.println("Array Element at index 0:"+myArray[0]);
         System.out.println("Array Element at index 1:"+myArray[1]);
@@ -28,7 +25,7 @@ public class MyArray {
         System.out.println("Array Element at index 7:"+myArray[7]);
         System.out.println("Array Element at index 8:"+myArray[8]);
         System.out.println("Array Element at index 9:"+myArray[9]);
-        System.out.println("Array Element at index 10:"+myArray[10]);
+
 
         //gwt the single value index
         int target=5;
