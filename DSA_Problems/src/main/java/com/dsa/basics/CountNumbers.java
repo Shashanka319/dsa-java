@@ -7,6 +7,7 @@ public class CountNumbers {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         System.out.println(countDigit(n));
+        System.out.println(getFactorial(n));
     }
     static int countDigit(int n){
         int count = 0;
@@ -15,5 +16,12 @@ public class CountNumbers {
             count++;
         }
         return count;
+    }
+    static  int getFactorial(int n){
+        int factorial = 1;
+        for(int i=1;i<=n;i++){
+            factorial = factorial * i;
+        }
+        return factorial;
     }
 }
